@@ -37,7 +37,7 @@
 
     <dependency.mockito-all.revision>1.8.4</dependency.mockito-all.revision>
 
-    <dependency.frontend-maven-plugin.revision>0.0.26</dependency.frontend-maven-plugin.revision>
+    <dependency.frontend-maven-plugin.revision>0.0.27-SNAPSHOT</dependency.frontend-maven-plugin.revision>
     <js.project.list></js.project.list>
     <requirejs.build.file></requirejs.build.file>
     <global.require.file></global.require.file>
@@ -376,6 +376,8 @@
                 <configuration>
                   <nodeVersion>v0.12.4</nodeVersion>
                   <npmVersion>2.10.1</npmVersion>
+                  <nodeDownloadRoot>http://10.100.8.158:8081/artifactory/proxy-nodejs-generic/</nodeDownloadRoot>
+                  <npmDownloadRoot>http://10.100.8.158:8081/artifactory/proxy-npm-generic/-/</npmDownloadRoot>
                 </configuration>
               </execution>
 
