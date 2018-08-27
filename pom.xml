@@ -7,7 +7,7 @@
     <groupId>org.pentaho</groupId>
     <artifactId>pentaho-ce-jar-parent-pom</artifactId>
     <version>1.1.6</version>
-    <relativePath></relativePath>
+    <relativePath/>
   </parent>
 
   <groupId>pentaho</groupId>
@@ -33,17 +33,17 @@
     <dependency.json.revision>6.1-SNAPSHOT</dependency.json.revision>
     <dependency.hibernate.revision>3.2.6.ga</dependency.hibernate.revision>
     <dependency.servlet-api.revision>2.4</dependency.servlet-api.revision>
-    <dependency.orientdb.revision>1.5.0</dependency.orientdb.revision>
+    <dependency.orientdb.revision>2.2.23</dependency.orientdb.revision>
 
     <dependency.mockito-all.revision>1.8.4</dependency.mockito-all.revision>
 
     <dependency.frontend-maven-plugin.revision>0.0.27-SNAPSHOT</dependency.frontend-maven-plugin.revision>
-    <js.project.list></js.project.list>
-    <requirejs.build.file></requirejs.build.file>
-    <global.require.file></global.require.file>
-    <requirejs.config.files.pattern></requirejs.config.files.pattern>
+    <js.project.list/>
+    <requirejs.build.file/>
+    <global.require.file/>
+    <requirejs.config.files.pattern/>
     <do.documentation.javascript>false</do.documentation.javascript>
-    <documentation.javascript.root></documentation.javascript.root>
+    <documentation.javascript.root/>
   </properties>
 
   <dependencyManagement>
@@ -274,9 +274,7 @@
                       </fileset>
                     </path>
 
-                    <java classname="org.mozilla.javascript.tools.shell.Main"
-                          fork="true"
-                          classpathref="build.classpath">
+                    <java classname="org.mozilla.javascript.tools.shell.Main" fork="true" classpathref="build.classpath">
                       <arg value="${basedir}/target/dependency/pentaho-js-build/profileBuilder.js"/>
                     </java>
                   </target>
